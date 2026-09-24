@@ -184,4 +184,39 @@ This task focuses on analyzing and cleaning the Healthcare dataset using Python.
 * Analyze Billing Amount.
 * Compare Medical Condition with Gender.
 
+## WEEK 6
+# HEALTHCARE DATA ANALYSIS
+
+## DESCRIPTION
+
+This task focuses on analyzing and visualizing the Healthcare dataset using Python.
+
+## OBJECTIVES
+
+* Load and explore the dataset.
+* Calculate hospital stay days.
+* Analyze billing by admission type.
+* Analyze monthly patient admissions.
+* Compare hospital stay days by admission type.
+* Find correlations between age, stay days, and billing amount.
+
+## WORKFLOW
+
+**1. Data Processing**
+
+* Convert admission and discharge dates.
+* Calculate the number of days stayed.
+
+**2. Data Analysis**
+
+* Calculate billing amount by admission type.
+* Find monthly patient admissions.
+* Calculate the correlation matrix.
+
+**3. Visualization**
+
+* Create billing and stay-day charts.
+* Plot monthly admissions.
+* Display the correlation heatmap.
+
 
