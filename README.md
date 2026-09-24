@@ -117,3 +117,36 @@ This task focuses on analyzing Apple stock data using Python and Pandas.
 * Calculate Daily Return percentage.
 * Find the top 10 highest Daily Returns.
 
+## WEEK 4
+# APPLE STOCK DATA VISUALIZATION
+
+## DESCRIPTION
+
+This task focuses on analyzing and visualizing Apple stock data using Python.
+
+## OBJECTIVES
+
+* Load and prepare the AAPL dataset.
+* Visualize Open, High, Low, and Close prices.
+* Analyze trading volume.
+* Calculate 20-day and 50-day moving averages.
+* Visualize the closing price with moving averages.
+
+## WORKFLOW
+
+**1. Data Loading**
+
+* Load the AAPL dataset.
+* Convert the Date column into datetime format.
+
+**2. Data Visualization**
+
+* Plot OHLC stock prices.
+* Plot trading volume.
+
+**3. Moving Average**
+
+* Calculate 20-day and 50-day moving averages.
+* Plot the closing price with moving averages.
+
+
