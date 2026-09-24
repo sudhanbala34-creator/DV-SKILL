@@ -136,12 +136,16 @@ Daily Delta: 10.160003
 
 The highest Daily Return in the dataset was:
 
-```text
+text
 Date: 1998-01-02
 Open: 0.121652
 Close: 0.145089
 Daily Return: 19.265610%
-```
+## Output
+<img width="1287" height="702" alt="image" src="https://github.com/user-attachments/assets/6900dcbd-1895-4cf3-9107-bad8def847d2" />
+<img width="1317" height="612" alt="image" src="https://github.com/user-attachments/assets/5e3c4a33-09f5-4667-9f44-e227033b599b" />
+<img width="1316" height="707" alt="image" src="https://github.com/user-attachments/assets/6f5c96ef-e48f-4a44-bcdd-8127a5126979" />
+
 
 ## Conclusion
 
