@@ -219,4 +219,32 @@ This task focuses on analyzing and visualizing the Healthcare dataset using Pyth
 * Plot monthly admissions.
 * Display the correlation heatmap.
 
+## WEEK 7
+# STUDENTS PERFORMANCE DATA ANALYSIS
+
+## DESCRIPTION
+
+This task focuses on cleaning and analyzing student performance data using Python and Pandas.
+
+## OBJECTIVES
+
+* Load the student performance dataset.
+* Clean categorical columns.
+* Calculate mean and median scores.
+* Calculate standard deviation.
+* Find Q1, Q2, and Q3 for student scores.
+
+## WORKFLOW
+
+**1. Data Cleaning**
+
+* Clean and standardize categorical columns.
+
+**2. Statistical Analysis**
+
+* Calculate mean and median.
+* Calculate standard deviation.
+* Calculate quartiles for math, reading, and writing scores.
+
+
 
