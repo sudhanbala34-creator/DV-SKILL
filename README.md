@@ -74,22 +74,7 @@ This task focuses on analyzing the Superstore Sales dataset using Python.
 * Create a bar chart for sales by category.
 * Create a histogram for sales distribution.
 
-  ## WEEK 3
-  # APPLE STOCK DATA ANALYSIS
-
-## DESCRIPTION
-
-This task focuses on analyzing Apple stock data using Python and Pandas.
-
-## OBJECTIVES
-
-* Load the AAPL stock dataset.
-* Calculate Daily Delta.
-* Find the top 10 positive Daily Delta values.
-* Calculate Daily Return percentage.
-* Find the top 10 highest Daily Returns.
-
-## WORKFLOW
+## WEEK 3
 # APPLE STOCK DATA ANALYSIS
 
 ## DESCRIPTION
