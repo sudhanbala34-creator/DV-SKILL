@@ -149,4 +149,39 @@ This task focuses on analyzing and visualizing Apple stock data using Python.
 * Calculate 20-day and 50-day moving averages.
 * Plot the closing price with moving averages.
 
+## WEEK 5
+# HEALTHCARE DATA ANALYSIS
+
+## DESCRIPTION
+
+This task focuses on analyzing and cleaning the Healthcare dataset using Python.
+
+## OBJECTIVES
+
+* Load and explore the dataset.
+* Check data types, shape, and missing values.
+* Handle missing Medical Code values.
+* Convert date columns into datetime format.
+* Clean Admission Type values.
+* Calculate hospital stay days.
+* Analyze billing amount and patient data.
+
+## WORKFLOW
+
+**1. Data Exploration**
+
+* Display dataset information and missing values.
+
+**2. Data Cleaning**
+
+* Fill missing Medical Code values.
+* Convert admission and discharge dates.
+* Clean Admission Type values.
+
+**3. Data Analysis**
+
+* Calculate Hospital Stay Days.
+* Analyze Billing Amount.
+* Compare Medical Condition with Gender.
+
 
