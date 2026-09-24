@@ -80,14 +80,10 @@ Created:
 - Histogram showing the distribution of sales.
 
 ## Output
+<img width="1023" height="698" alt="image" src="https://github.com/user-attachments/assets/8c3633c6-c940-4127-bb76-be67db237967" />
+<img width="1021" height="591" alt="image" src="https://github.com/user-attachments/assets/ef0f59a1-cb80-4af2-8b9f-5095369eda32" />
 
-The project generates:
 
-- Dataset summary
-- Delivery Days calculation
-- Sales by Category analysis
-- Bar chart of category sales
-- Histogram of sales distribution
 
 ## Conclusion
 
