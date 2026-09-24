@@ -1,4 +1,4 @@
-<img width="1216" height="726" alt="image" src="https://github.com/user-attachments/assets/61707f85-e4d9-433b-9bda-57f795d9a09f" />## Week6
+## Week6
 
 # Healthcare Dataset Analysis
 
