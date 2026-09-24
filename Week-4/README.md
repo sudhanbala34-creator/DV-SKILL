@@ -1,126 +1,173 @@
-## WEEK 4
-
-# Healthcare Dataset Analysis
+# AAPL Stock Data Analysis Using Python
 
 ## Project Overview
 
-This project performs basic data cleaning and analysis on a healthcare dataset using Python and Pandas in Google Colab.
+This project analyzes Apple Inc. (AAPL) historical stock market data using Python and Pandas.
 
-The dataset contains information about patients, their medical conditions, admission details, medical codes, billing amounts, and discharge dates.
-
-## Dataset
-
-The dataset contains:
-
-* 500 rows
-* 9 columns
-
-### Columns
-
-* Patient_ID
-* Gender
-* Age
-* Medical_Condition
-* Admission_Date
-* Admission_Type
-* Medical_Code
-* Billing_Amount
-* Discharge_Date
+The dataset contains daily stock information such as Open, High, Low, Close, Adjusted Close, and Volume. Additional columns were created to calculate the daily price change and daily percentage return.
 
 ## Technologies Used
 
 * Python
 * Pandas
-* Matplotlib
-* Seaborn
 * Google Colab
+* CSV Dataset
 
-## Data Cleaning
+## Dataset
 
-The following operations were performed:
+The dataset used in this project is `AAPL.csv`.
 
-1. Loaded the healthcare dataset using Pandas.
-2. Checked the dataset using `head()` and `tail()`.
-3. Checked column names and data types.
-4. Checked the number of rows and columns.
-5. Checked missing values.
-6. Replaced missing `Medical_Code` values with `Unknown`.
-7. Converted admission and discharge dates into datetime format.
-8. Cleaned `Admission_Type` using `strip()` and `lower()`.
+It contains the following columns:
 
-There were 15 missing values in the `Medical_Code` column before cleaning.
+* Date
+* Open
+* High
+* Low
+* Close
+* Adj Close
+* Volume
 
-## Data Analysis
+The dataset contains 10,409 rows of historical Apple stock data.
 
-### Admission Type
+## Project Steps
 
-The admission types were analyzed using `value_counts()`.
-
-* Routine: 196
-* Emergency: 188
-* Urgent: 116
-
-### Billing Amount
-
-The `Billing_Amount` column was analyzed using statistical measures such as:
-
-* Mean
-* Standard deviation
-* Minimum
-* Maximum
-* Quartiles
-* Median
-
-### Hospital Stay
-
-Hospital stay duration was calculated using the admission date and discharge date.
+### 1. Import Pandas
 
 ```python
-df["Hospital_Stay_Days"] = (
-    df["Discharge_Date"] - df["Admission_Date"]
-).dt.days
+import pandas as pd
 ```
 
-### Medical Condition and Gender
+Pandas is used for loading and analyzing the dataset.
 
-A cross-tabulation was used to analyze the relationship between medical conditions and gender.
+### 2. Load the Dataset
 
 ```python
-pd.crosstab(
-    df["Medical_Condition"],
-    df["Gender"]
-)
+data = pd.read_csv("AAPL.csv")
+
+print("Dataset loaded successfully")
 ```
 
-## Objectives
+The AAPL CSV file is loaded into a Pandas DataFrame.
 
-* Understand the healthcare dataset.
-* Clean and prepare the data.
-* Handle missing values.
-* Convert date columns into the correct format.
-* Analyze admission types.
-* Analyze billing amounts.
-* Calculate hospital stay duration.
-* Analyze medical conditions based on gender.
+### 3. View the Dataset
 
-## Project Structure
+```python
+data.head()
+```
+
+This displays the first five rows of the dataset.
+
+### 4. Calculate Daily Delta
+
+```python
+data["Daily Delta"] = data["Close"] - data["Open"]
+
+data.head()
+```
+
+Daily Delta represents the difference between the closing price and opening price.
+
+Formula:
 
 ```text
-Healthcare-Dataset-Analysis/
+Daily Delta = Close - Open
+```
+
+A positive value means the closing price was higher than the opening price.
+
+A negative value means the closing price was lower than the opening price.
+
+### 5. Find Top 10 Positive Daily Changes
+
+```python
+top_10 = data[data["Daily Delta"] > 0].sort_values(
+    "Daily Delta", ascending=False
+).head(10)
+
+print(top_10[["Date", "Open", "Close", "Daily Delta"]])
+```
+
+This identifies the 10 days with the largest positive difference between the opening and closing prices.
+
+### 6. Calculate Daily Return
+
+```python
+data["Daily Return"] = (
+    (data["Close"] - data["Open"]) / data["Open"]
+) * 100
+
+data.head()
+```
+
+Daily Return shows the percentage change between the opening and closing prices.
+
+Formula:
+
+```text
+Daily Return = ((Close - Open) / Open) × 100
+```
+
+### 7. Find Top 10 Daily Returns
+
+```python
+top_10_returns = data.sort_values(
+    "Daily Return", ascending=False
+).head(10)
+
+print(top_10_returns[["Date", "Open", "Close", "Daily Return"]])
+```
+
+This displays the 10 days with the highest daily percentage returns.
+
+## Results
+
+### Top Daily Delta
+
+The highest Daily Delta in the dataset was:
+
+```text
+Date: 2022-02-24
+Open: 152.580002
+Close: 162.740005
+Daily Delta: 10.160003
+```
+
+### Top Daily Return
+
+The highest Daily Return in the dataset was:
+
+```text
+Date: 1998-01-02
+Open: 0.121652
+Close: 0.145089
+Daily Return: 19.265610%
+```
+
+## Conclusion
+
+This project demonstrates how Python and Pandas can be used to analyze historical stock market data.
+
+The analysis calculates daily price changes and percentage returns and identifies the dates with the highest positive movements in Apple's stock price.
+
+## Files in This Repository
+
+```text
+AAPL-Stock-Analysis/
 │
-├── healthcare_dataset.csv
-├── Healthcare_Analysis.ipynb
+├── AAPL.csv
+├── AAPL_Stock_Analysis.ipynb
 └── README.md
 ```
 
 ## How to Run
 
-1. Open Google Colab.
-2. Upload the `.ipynb` notebook.
-3. Upload `healthcare_dataset.csv`.
+1. Download or clone this repository.
+2. Open the Jupyter Notebook in Google Colab.
+3. Upload `AAPL.csv` to the Colab environment.
 4. Run the notebook cells in order.
-5. View the results and analysis.
 
-## Conclusion
+## Author
 
-This project demonstrates basic healthcare data analysis using Python and Pandas. It covers data cleaning, mi
+Bala Suthan
+
+BCA Student
