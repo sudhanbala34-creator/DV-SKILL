@@ -1,4 +1,4 @@
-## Week6
+<img width="1216" height="726" alt="image" src="https://github.com/user-attachments/assets/61707f85-e4d9-433b-9bda-57f795d9a09f" />## Week6
 
 # Healthcare Dataset Analysis
 
@@ -73,6 +73,12 @@ Statistical measures were also calculated for `Billing_Amount`, including:
 ## Example
 
 The `Billing_Amount` analysis includes:
+## Output
+<img width="1250" height="777" alt="image" src="https://github.com/user-attachments/assets/aa0f3942-97ed-4f55-b40f-5d9bf16729a9" />
+<img width="1216" height="726" alt="image" src="https://github.com/user-attachments/assets/6cd95d33-0338-4c20-a296-2087a08595af" />
+<img width="1313" height="703" alt="image" src="https://github.com/user-attachments/assets/7f28235f-98a7-41e7-ae20-8ebfd427b019" />
+<img width="731" height="620" alt="image" src="https://github.com/user-attachments/assets/678c8b08-26bd-46d5-bd74-f67fa670b557" />
+
 
 ```python
 df["Billing_Amount"].describe()
