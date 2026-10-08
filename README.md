@@ -231,5 +231,26 @@ This task focuses on cleaning and analyzing student performance data using Pytho
 * Calculate standard deviation.
 * Calculate quartiles for math, reading, and writing scores.
 
+## WEEK 8
+# Student Performance Analysis
+
+This project analyzes student performance using Python.
+
+The project focuses on cleaning student data and finding basic statistical values such as mean, median, mode, standard deviation, and quartiles for student scores.
+
+### Tools Used
+
+* Python
+* Pandas
+* NumPy
+* Jupyter Notebook
+
+### File
+
+`studentsperformace.ipynb`
+
+### Purpose
+
+To understand student performance through simple data analysis and statistics.
 
 
