@@ -254,7 +254,7 @@ The project focuses on cleaning student data and finding basic statistical value
 To understand student performance through simple data analysis and statistics.
 
 
-##WEEK 9
+## WEEK 9
 # House Sales Data Understanding, Cleaning & Feature Engineering
 
 ## Project Description
