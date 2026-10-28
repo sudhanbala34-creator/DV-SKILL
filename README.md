@@ -303,5 +303,55 @@ This project helps improve understanding of data cleaning, feature engineering, 
 
 The project demonstrates basic data analysis techniques to prepare house sales data and identify unusual property prices.
 
+## WEEK 10
+# House Sales Data Understanding, Cleaning & Feature Engineering
+
+## Project Description
+
+This project analyzes house sales data using Python. It focuses on data cleaning, feature engineering, and identifying house price outliers.
+
+## Objectives
+
+* Clean missing values and invalid zero values.
+* Convert sale dates into datetime format.
+* Calculate house age and renovation age.
+* Calculate price per square foot for living area and lot size.
+* Identify house price outliers using box plots and the IQR method.
+
+## Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Google Colab
+
+## Dataset
+
+**Dataset Name:** `kc_house_data.csv`
+
+The dataset contains house prices, bedrooms, bathrooms, living area, lot size, construction year, renovation year, and sale dates.
+
+## Project Steps
+
+1. Import Python libraries.
+2. Load and explore the dataset.
+3. Clean missing values and invalid zero values.
+4. Convert sale dates and calculate house age.
+5. Create price-per-square-foot features.
+6. Visualize house prices using a box plot.
+7. Detect outliers using the IQR method.
+8. Save the cleaned dataset as a CSV file.
+
+## Expected Outcome
+
+This project helps improve understanding of data cleaning, feature engineering, and basic data visualization using Python.
+
+## Conclusion
+
+The project demonstrates basic data analysis techniques to prepare house sales data and identify unusual property prices.
+
+
 
 
